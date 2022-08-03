@@ -1,0 +1,45 @@
+{
+  "name": "@twipped/jest-resolver",
+  "version": "0.0.0",
+  "description": "Enhanced path resolution for Jest",
+  "author": "Jocelyn Badgley <joc@twipped.com>",
+  "homepage": "https://github.com/Twipped/jest-resolver/#readme",
+  "license": "MIT",
+  "main": "resolver.cjs",
+  "module": "resolver.mjs",
+  "exports": {
+    "require": "./resolver.cjs",
+    "import": "./resolver.mjs"
+  },
+  "engines": {
+    "node": "^16.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Twipped/jest-resolver/"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "enhanced-resolve": "^5.9.3"
+  },
+  "devDependencies": {
+    "@twipped/eslint-config": "^7.3.2",
+    "@twipped/semrel-config": "^1.0.1",
+    "eslint": "^8.21.0",
+    "semantic-release": "^19.0.3"
+  },
+  "eslintConfig": {
+    "extends": "@twipped/eslint-config/node-cjs"
+  },
+  "release": {
+    "extends": "@twipped/semrel-config"
+  }
+}
