@@ -1,6 +1,6 @@
 {
   "name": "@twipped/jest-resolver",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Enhanced path resolution for Jest",
   "author": "Jocelyn Badgley <joc@twipped.com>",
   "homepage": "https://github.com/Twipped/jest-resolver/#readme",
